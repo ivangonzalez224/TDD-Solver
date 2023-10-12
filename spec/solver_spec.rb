@@ -16,17 +16,19 @@ describe Solver do
   end
 
   describe '#reverse' do
-    it 'returns the reverse of a string' do
-      solver = Solver.new
-      expect(solver.reverse('hello')).to eq('olleh')
+    context 'returns the reverse of a string' do
+      it 'returns the reverse of "hello"' do
+        solver = Solver.new
+        expect(solver.reverse('hello')).to eq('olleh')
+      end
     end
-  end
 
-  describe '#reverse' do
-    it 'returns the reverse of any string variable' do
-      solver = Solver.new
-      variable = 'hello'
-      expect(solver.reverse(variable)).to eq('olleh')
+    context 'returns the reverse of a string variable' do
+      it 'returns the reverse of "hello"' do
+        solver = Solver.new
+        variable = 'hello'
+        expect(solver.reverse(variable)).to eq('olleh')
+      end
     end
   end
 
@@ -42,6 +44,13 @@ describe Solver do
       it 'returns "buzz" for numbers divisible by 5' do
         solver = Solver.new
         expect(solver.fizzbuzz(5)).to eq('buzz')
+      end
+    end
+
+    context 'when number is divisible by 3 and 5' do
+      it 'returns "fizzbuzz" for numbers divisible by 3 and 5' do
+        solver = Solver.new
+        expect(solver.fizzbuzz(15)).to eq('fizzbuzz')
       end
     end
   end
