@@ -21,4 +21,12 @@ describe Solver do
       expect(solver.reverse('hello')).to eq('olleh')
     end
   end
+
+  describe '#reverse' do
+    it 'returns the reverse of any string variable' do
+      solver = Solver.new
+      variable = 'hello'
+      expect(solver.reverse(variable)).to eq('olleh')
+    end
+  end
 end
