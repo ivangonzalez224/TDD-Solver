@@ -29,4 +29,11 @@ describe Solver do
       expect(solver.reverse(variable)).to eq('olleh')
     end
   end
+
+  describe '#fizzbuzz' do
+    it 'returns "fizz" for numbers divisible by 3' do
+      solver = Solver.new
+      expect(solver.fizzbuzz(3)).to eq('fizz')
+    end
+  end
 end
