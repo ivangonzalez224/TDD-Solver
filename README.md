@@ -30,7 +30,7 @@
 
 # 📖 TDD Solver <a name="about-project"></a>
 
-**TDD Solver** is a Ruby project that solve the factoria, reverse and fizzbuzz method and add tests using the TDD methodology.
+**TDD Solver** is a Ruby project that solve the factorial, reverse and fizzbuzz methods and add tests using the TDD methodology.
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -47,9 +47,9 @@
 
 ### Key Features <a name="key-features"></a>
 
-- **Creation of "factorial method**
-- **Creation of "reverse method**
-- **Creation of "fizzbuzz method**
+- **Creation of "factorial method"**
+- **Creation of "reverse method"**
+- **Creation of "fizzbuzz method"**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -87,7 +87,7 @@ To run tests, run the following command:
 
 ```sh
   cd project
-  ruby test_suite.rb
+  rspec spec
 ```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -130,7 +130,7 @@ To run tests, run the following command:
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](../../issues/).
+Feel free to check the [issues page](https://github.com/ivangonzalez224/TDD-Solver/issues).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
