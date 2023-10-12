@@ -13,4 +13,10 @@ class Solver
   def reverse(string)
     string.reverse
   end
+
+  def fizzbuzz(n)
+    if ((n % 3 == 0) && (n % 5 == 0))
+      'fizzbuzz'
+    end 
+  end
 end
