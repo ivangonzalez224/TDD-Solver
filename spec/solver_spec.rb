@@ -31,9 +31,18 @@ describe Solver do
   end
 
   describe '#fizzbuzz' do
-    it 'returns "fizz" for numbers divisible by 3' do
-      solver = Solver.new
-      expect(solver.fizzbuzz(3)).to eq('fizz')
+    context 'when number is divisible by 3' do
+      it 'returns "fizz" for numbers divisible by 3' do
+        solver = Solver.new
+        expect(solver.fizzbuzz(3)).to eq('fizz')
+      end
+    end
+
+    context 'when number is divisible by 5' do
+      it 'returns "buzz" for numbers divisible by 5' do
+        solver = Solver.new
+        expect(solver.fizzbuzz(5)).to eq('buzz')
+      end
     end
   end
 end
