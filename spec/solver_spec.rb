@@ -53,5 +53,12 @@ describe Solver do
         expect(solver.fizzbuzz(15)).to eq('fizzbuzz')
       end
     end
+
+    context 'when number is not divisible by 3 or 5' do
+      it 'returns the input as a string' do
+        solver = Solver.new
+        expect(solver.fizzbuzz(7)).to eq('7')
+      end
+    end
   end
 end
